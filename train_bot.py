@@ -1,21 +1,16 @@
 #Biblioteca de pré-processamento de dados de texto
-import nltk
 
-from nltk.stem import PorterStemmer
-stemmer = PorterStemmer()
+#importar a class PorterStemmer 
 
-import json
-import pickle
-import numpy as np
+#iniciá-la
+
+#importar json, pickle, numpy
+
+
 
 nltk.download('punkt')
 
-words=[]
-classes = []
-word_tags_list = []
-ignore_words = ['?', '!',',','.', "'s", "'m"]
-train_data_file = open('intents.json').read()
-intents = json.loads(train_data_file)
+
 
 #função para anexar palavras-tronco
 def get_stem_words(words, ignore_words):
