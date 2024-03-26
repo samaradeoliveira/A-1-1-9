@@ -9,6 +9,9 @@
 
 
 nltk.download('punkt')
+#coisas para fazer
+
+
 
 
 
